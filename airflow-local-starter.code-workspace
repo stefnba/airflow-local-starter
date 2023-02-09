@@ -1,10 +1,19 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
+    "folders": [
+        {
+            "path": "."
+        }
     ],
     "settings": {
-        "python.defaultInterpreterPath": ".conda/bin/python"
+        "python.defaultInterpreterPath": ".conda/bin/python",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[python]": {
+            "editor.defaultFormatter": null
+        },
+        "python.formatting.blackArgs": ["--line-length", "80"],
+
+        "python.formatting.provider": "black",
+        "python.analysis.typeCheckingMode": "basic"
     }
 }
